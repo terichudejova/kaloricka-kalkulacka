@@ -66,7 +66,6 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-    margin-top: var(--space-m);
 }
 
 .firstSection .innerBox h2 {
@@ -86,6 +85,7 @@ h1 {
     margin-top: var(--space-s);
 }
 
+
 .firstSection .innerBox p {
     font-family: var(--main-font);
     font-size: var(--size-m);
@@ -93,7 +93,7 @@ h1 {
 
 .uvod {
     min-width: 60%;
-    max-width: 90rem;
+    max-width: 100%;
     padding-bottom: var(--space-s);
     padding-left: var(--space-s);
 }
