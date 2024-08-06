@@ -10,9 +10,9 @@
 }
 
 .innerBox {
+    position: relative;
     height: 100%;
-    min-width: 70%;
-    max-width: 90%;
+    width: 70%;
     border: 1px solid red;
 }
 
@@ -27,6 +27,8 @@ p {
     font-size: 20px;
 }
 
+/* ------------------------------------------------------------------------------ */
+
 /* NAVBAR */
 .navbar {
     background-color: var(--main-color);
@@ -36,7 +38,7 @@ p {
 .navbar .innerBox {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -48,11 +50,158 @@ h1 {
     color: black;
 }
 
+/* ------------------------------------------------------------------------------ */
+
+
 /* FIRST SECTION */
 .firstSection {
     background-color: var(--main-color);
-    height: 70vh;
+    min-height: 70rem;
+    max-height: 250rem;
 }
+
+.firstSection .innerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstSection .innerBox h2 {
+    font-size: var(--size-xxl);
+    font-family: var(--main-font);
+    font-weight: 300;
+    width: 70%;
+}
+
+#foodPlate {
+    max-width: 50rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 1rem 1rem 3rem;
+    margin-right: var(--space-s);
+}
+
+.firstSection .innerBox p {
+    font-family: var(--main-font);
+    font-size: var(--size-m);
+}
+
+.uvod {
+    max-width: 90rem;
+}
+
+.uvod p {
+    margin-bottom: var(--space-s);
+    margin-right: var(--space-xxl);
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+}
+
+
+/* Poznámky v textu */
+.uvod span {
+    color: var(--third-color);
+    position: relative;
+}
+
+.uvod span:hover {
+    cursor: pointer;
+    color: var(--hover-color);
+}
+
+/* Kalorie */
+.uvod span:nth-of-type(1)::after {
+    content: "Kalorie je jednotka energie. \A 1 kilokalorie (kcal) = 4,184 kilojoule (kJ)";
+    white-space: pre;
+    width: 40rem;
+    height: 8rem;
+    box-sizing: border-box;
+    background-color: var(--third-color);
+    border-radius: 2rem;
+    position: absolute;
+    top: -2rem;
+    left: 10rem;
+    color: white;
+    padding: 1rem;
+    z-index: 1;
+    text-align: left;
+    display: none;
+}
+
+.uvod span:nth-of-type(1):hover::after {
+    display:block;
+}
+
+/* Deficit */
+.uvod span:nth-of-type(2)::after {
+    content: "Kalorický příjem < kalorický výdej.";
+    width: 30rem;
+    height: 8rem;
+    box-sizing: border-box;
+    background-color: var(--third-color);
+    border-radius: 2rem;
+    position: absolute;
+    top: -2rem;
+    left: 10rem;
+    color: white;
+    padding: 1rem;
+    z-index: 1;
+    text-align: left;
+    display: none;
+}
+
+.uvod span:nth-of-type(2):hover::after {
+    display:block;
+}
+
+/* Nadbytek */
+.uvod span:nth-of-type(3)::after {
+    content: "Kalorický příjem > kalorický výdej.";
+    width: 30rem;
+    height: 8rem;
+    box-sizing: border-box;
+    background-color: var(--third-color);
+    border-radius: 2rem;
+    position: absolute;
+    top: -2rem;
+    left: 10rem;
+    color: white;
+    padding: 1rem;
+    z-index: 1;
+    text-align: left;
+    display: none;
+}
+
+.uvod span:nth-of-type(3):hover::after {
+    display:block;
+}
+
+/* Bazální metabolismus */
+.uvod span:nth-of-type(4)::after {
+    content: "Bazální metabolismus (BMR) je množství energie (kalorií), které tělo potřebuje k udržení základních životních funkcí v klidovém stavu.";
+    width: 38rem;
+    height: 14rem;
+    box-sizing: border-box;
+    background-color: var(--third-color);
+    border-radius: 2rem;
+    position: absolute;
+    top: -2rem;
+    left: 10rem;
+    color: white;
+    padding: 1rem;
+    z-index: 1;
+    text-align: left;
+    display: none;
+}
+
+.uvod span:nth-of-type(4):hover::after {
+    display:block;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+
 
 /* SECOND SECTION */
 .secondSection {
@@ -60,14 +209,54 @@ h1 {
     height: 70vh;
 } 
 
+
+
+/* ------------------------------------------------------------------------------ */
+
+
 /* THIRD SECTION */
 .thirdSection {
     background-color: var(--main-color);
     height: 70vh;
 } 
 
+
+/* ------------------------------------------------------------------------------ */
+
+
+
+/* FOURTH SECTION */
+.fourthSection {
+    background-color: var(--second-color);
+    height: 70vh;
+} 
+
+
+/* ------------------------------------------------------------------------------ */
+
+
+
 /* FOOTER */
 .footer {
-    background-color: var(--second-color);
+    background-color: var(--main-color);
     height: 10vh;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+    .firstSection .innerBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    #foodPlate {
+        margin-bottom: var(--space-xl);
+    }
 }

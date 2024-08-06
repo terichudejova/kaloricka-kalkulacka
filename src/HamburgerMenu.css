@@ -1,0 +1,75 @@
+
+
+/* Celé hamburger menu */
+.hamburger-menu {
+    position: fixed;
+    top: 3vh;
+    right: 11vw;
+    z-index: 2;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Samotný "hamburger" */
+  .menu-toggle {
+    cursor: pointer;
+    width: 3rem;
+    height: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .bar {
+    height: 0.3rem;
+    width: 100%;
+    background-color: var(--third-color);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+
+  /* Přechod hamburgeru na křížek */
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 8px) scaleX(1.2);
+  }
+  
+  .menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -8px) scaleX(1.2);
+  }
+  
+  /* Styling rozbalené nabídky */
+  .nav-menu {
+    border-radius: 1rem;
+    display: none;
+    flex-direction: column;
+    top: 5rem;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    font-size: var(--size-s);
+    font-family: var(--main-font);
+    font-weight: 500;
+  }
+  
+  .nav-menu.open {
+    display: flex;
+  }
+  
+  .nav-menu a {
+    padding: 0.8rem 0;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-menu a:hover {
+    text-decoration: underline;
+  }

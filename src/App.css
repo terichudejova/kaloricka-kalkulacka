@@ -3,23 +3,27 @@
     --main-color: #f2fcf4;
     --second-color: #d9eddf;
     --third-color: #737f4e;
+    --hover-color: #b56035;
 
     /* Fonts: */
     --heading-font: "Poppins", sans-serif;
+    --main-font: "Raleway", sans-serif;
 
     /* Padding and margin spaces: */
     --space-xs: 1rem;
-    --space-s: 1.5rem;
-    --space-m: 2rem;
-    --space-l: 2.5rem;
-    --space-xl: 3rem;
+    --space-s: 3rem;
+    --space-m: 4rem;
+    --space-l: 5rem;
+    --space-xl: 6em;
+    --space-xxl: 7rem;
 
     /* Font sizes: */
-    --size-xs: 1.5rem;
-    --size-s: 1.9rem;
-    --size-m: 2.4rem;
-    --size-l: 3rem;
-    --size-xl: 3.6rem;
+    --size-xs: 1.3rem;
+    --size-s: 1.5rem;
+    --size-m: 2rem;
+    --size-l: 2.5rem;
+    --size-xl: 3rem;
+    --size-xxl: 3.6rem;
 }
 
 body, html {
@@ -41,4 +45,8 @@ body, html {
 
 p {
     margin: 0;
+}
+
+b {
+    font-weight: 600;
 }
