@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import "./index.css"
 import HamburgerMenu from "./HamburgerMenu"
+import Calculator from './Calculator'
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In ducimus deleniti quisquam dolore inventore culpa autem maiores iure blanditiis earum, quidem, praesentium dolorem! Obcaecati quidem saepe similique voluptates et adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nihil, voluptatum tenetur, qui fugiat sint facilis doloribus doloremque a, tempora numquam dolores totam error voluptatem veniam impedit assumenda illum sit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dolores aut animi fuga vitae voluptate minus sed quisquam adipisci veritatis! Magnam ea dignissimos est perspiciatis, quae enim odio officia corrupti?</p>
             <div className='kalkulacka'>
               <h3>Kalkulačka</h3>
+              <Calculator/>
             </div>
           </div>
         </div>
