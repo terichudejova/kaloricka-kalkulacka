@@ -5,6 +5,11 @@ import MaleIcon from '@mui/icons-material/Male';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
 import './Calculator.css';
+import AgeSelect from './AgeSelect';
+import HeightSelect from './HeightSelect';
+import WeightSelect from './WeightSelect';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 // Custom switch styled component
 const CustomSwitch = styled(Switch)(({ theme }) => ({
@@ -47,7 +52,7 @@ function Calculator() {
   const [gender, setGender] = useState('male');
   const [age, setAge] = useState(20);
   const [height, setHeight] = useState(170);
-  const [weight, setWeight] = useState(70);
+  const [weight, setWeight] = useState(67);
   const [result, setResult] = useState(null);
 
   const handleCalculate = () => {
@@ -61,75 +66,57 @@ function Calculator() {
   };
 
   return (
-    <div className="kalkulacka-container">
-      {/* First Row */}
-      <div className="row">
-        <div className="column">
-          <CustomSwitch
-            checked={gender === 'female'}
-            onChange={(event) => setGender(event.target.checked ? 'female' : 'male')}
-            color="primary"
-            icon={<MaleIcon className="icon" />}
-            checkedIcon={<FemaleIcon className="icon" />}
-          />
-        </div>
-        <div className="column">
-          <div className="text">
+    <div className='calculator-container'>
+        <div className='first-row'>
+          <div className='gender'>
             <span className={gender === 'male' ? 'active' : ''}>Muž</span>
+              <CustomSwitch
+                checked={gender === 'female'}
+                onChange={(event) => setGender(event.target.checked ? 'female' : 'male')}
+                color="primary"
+                icon={<MaleIcon className="icon" />}
+                checkedIcon={<FemaleIcon className="icon" />}
+              />
             <span className={gender === 'female' ? 'active' : ''}>Žena</span>
           </div>
+          <div className='age'>
+            <AgeSelect age={age} setAge={setAge}/>
+          </div>
         </div>
-      </div>
-
-      {/* Second Row */}
-      <div className="row">
-        <div className="column">
-          <label>
-            Věk (roky):
-            <select value={age} onChange={(e) => setAge(parseInt(e.target.value))}>
-              {Array.from({ length: 91 }, (_, i) => i + 10).map((value) => (
-                <option key={value} value={value}>
-                  {value}
-                </option>
-              ))}
-            </select>
-          </label>
+        <div className='second-row'>
+          <div className='height'>
+            <HeightSelect height={height} setHeight={setHeight}/>
+          </div>
+          <div className='weight'>
+            <WeightSelect weight={weight} setWeight={setWeight}/>
+          </div>
         </div>
-        <div className="column">
-          <label>
-            Výška (cm):
-            <select value={height} onChange={(e) => setHeight(parseInt(e.target.value))}>
-              {Array.from({ length: 81 }, (_, i) => i + 130).map((value) => (
-                <option key={value} value={value}>
-                  {value}
-                </option>
-              ))}
-            </select>
-          </label>
+        <div className='third-row'>
+          <div className="calculate">
+            <Button
+              variant="contained"
+              size="large"
+              onClick={handleCalculate}
+              sx={{
+                backgroundColor: '#737f4e', // Zelená barva pozadí
+                color: '#fff', // Bílá barva textu
+                '&:hover': {
+                  backgroundColor: '#737f4e', // Tmavší zelená barva při hoveru
+                },
+                fontSize: "1.5rem",
+                padding: "1rem 2rem",
+                margin: "0 0 0 0.5rem",
+                letterSpacing: "0.2rem",
+                fontFamily: "Raleway"
+              }}
+            >
+              Spočítat
+            </Button>
+          </div>
+          <div className="result">
+            {result !== null && <p>Bazální metabolismus: {Math.round(result)}</p>}
+          </div>
         </div>
-      </div>
-
-      {/* Third Row */}
-      <div className="row">
-        <div className="column">
-          <label>
-            Váha (kg):
-            <select value={weight} onChange={(e) => setWeight(parseInt(e.target.value))}>
-              {Array.from({ length: 171 }, (_, i) => i + 30).map((value) => (
-                <option key={value} value={value}>
-                  {value}
-                </option>
-              ))}
-            </select>
-          </label>
-        </div>
-        <div className="column">
-          <button onClick={handleCalculate}>Spočítat</button>
-        </div>
-        <div className="column">
-          {result !== null && <p>Výsledek: {result.toFixed(2)}</p>}
-        </div>
-      </div>
     </div>
   );
 }
