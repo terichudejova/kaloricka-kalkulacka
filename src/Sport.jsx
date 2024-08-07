@@ -1,21 +1,20 @@
 import "./Sport.css"
-import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
 
-export default function Sport() {
+
+export default function Sport({ IconComponent, title, description }) {
     return (
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <DirectionsRunIcon className="sport-icon"/>
-                    <h3>Běh</h3>
+        <div className="card">
+            <div className="face face1">
+                <div className="content">
+                    {IconComponent && <IconComponent className="sport-icon" />}
+                    <h3>{title}</h3>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+            <div className="face face2">
+                <div className="content">
+                    <p>{description}</p>
                 </div>
             </div>
         </div>
-    )
+    );
 }
-

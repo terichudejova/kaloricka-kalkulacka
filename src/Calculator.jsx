@@ -1,15 +1,22 @@
-// Kalkulacka.jsx
-import React, { useState } from 'react';
+//Icons import
 import FemaleIcon from '@mui/icons-material/Female';
 import MaleIcon from '@mui/icons-material/Male';
+
+//React & MUI import
+import React, { useState } from 'react';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+
+//CSS import
 import './Calculator.css';
+
+//Components import
 import AgeSelect from './AgeSelect';
 import HeightSelect from './HeightSelect';
 import WeightSelect from './WeightSelect';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
+
 
 // Custom switch styled component
 const CustomSwitch = styled(Switch)(({ theme }) => ({
@@ -48,6 +55,8 @@ const CustomSwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
+
+//Export funkce
 function Calculator() {
   const [gender, setGender] = useState('male');
   const [age, setAge] = useState(20);

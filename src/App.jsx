@@ -4,7 +4,8 @@ import "./index.css"
 import HamburgerMenu from "./HamburgerMenu"
 import Calculator from './Calculator'
 import Card from "./Card"
-import Sport from './Sport'
+import SportsBox from './SportsBox'
+
 
 function App() {
 
@@ -63,15 +64,12 @@ function App() {
             <Card src={"images/nuts.jpg"} title={"TUKY"} text={"1 g = 9 kcal \nOřechy, avokádo, ryby, máslo, mléčné výrobbky..."}/>
             <Card src={"images/potatoes.jpg"} title={"SACHARIDY"} text={"1 g = 4 kcal \nVločky, rýže, brambory, těstoviny, pečivo, ovoce, zelenina, luštěniny..."}/>
         </div>
-        <div className='sport-container'>
-            <Sport />
-        </div>
+        <SportsBox />
       </div>
 
       {/* FOOTER */}
       <footer className='footer outerBox' id='footer'>
         <div className='innerBox'>
-
         </div>
       </footer>
 
