@@ -21,42 +21,130 @@ export default function SportsBox() {
         <Sport
           IconComponent={DirectionsRunIcon}
           title="Běh"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at."
+          description={
+            <>
+              500–900 kcal/h
+              <br/>
+              <br/>
+              Závisí na rychlosti, např.:
+              <br/>
+              8 km/h = ~500 kcal/h,
+              <br/>
+              12 km/h = ~800–900 kcal/h
+            </>
+          }
         />
         <Sport
           IconComponent={DirectionsWalkIcon}
           title="Chůze"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at."
+          description={
+            <>
+              250–350 kcal/h
+              <br/>
+              <br/>
+              Závisí na rychlosti, např.:
+              <br/>
+              4,5 km/h = ~250 kcal/h,
+              <br/>
+              6 km/h = ~350 kcal/h
+            </>
+          }
         />
         <Sport
           IconComponent={DirectionsBikeIcon}
           title="Cyklistika"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at."
+          description={
+            <>
+              400–800 kcal/h
+              <br/>
+              <br/>
+              Závisí na intenzitě, např.:
+              <br/>
+              pomalejší = ~400 kcal/h,
+              <br/>
+              intenzivnější = ~800 kcal/h
+            </>
+          }
         />
         <Sport
           IconComponent={FitnessCenterIcon}
           title="Posilování"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at."
+          description={
+            <>
+              300–600 kcal/h
+              <br/>
+              <br/>
+              Závisí na intenzitě, např.:
+              <br/>
+              mírnější = ~300 kcal/h,
+              <br/>
+              intenzivnější = ~500 kcal/h
+            </>
+          }
         />
         <Sport
           IconComponent={PoolIcon}
           title="Plavání"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at."
+          description={
+            <>
+              400–700 kcal/h
+              <br/>
+              <br/>
+              Závisí na rychlosti, např.:
+              <br/>
+              pomalejší = ~400 kcal/h,
+              <br/>
+              intenzivnější = ~600 kcal/h
+            </>
+          }
         />
         <Sport
           IconComponent={RollerSkatingIcon}
           title="Bruslení"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at."
+          description={
+            <>
+              300-600 kcal/h
+              <br/>
+              <br/>
+              Závisí na intenzitě, např.:
+              <br/>
+              rekreační = ~300 kcal/h,
+              <br/>
+              intenzivnější = ~600 kcal/h
+            </>
+          }
         />
         <Sport
           IconComponent={SportsTennisIcon}
           title="Tenis"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at."
+          description={
+            <>
+              500-800 kcal/h
+              <br/>
+              <br/>
+              Závisí na intenzitě, např.:
+              <br/>
+              rekreační = ~500 kcal/h,
+              <br/>
+              intenzivnější = ~800 kcal/h
+            </>
+          }
         />
         <Sport
           IconComponent={SportsMmaIcon}
           title="Box"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at."
+          description={
+            <>
+              600-900 kcal/h
+              <br/>
+              <br/>
+              Závisí na intenzitě, např.:
+              <br/>
+              mírné = ~600 kcal/h,
+              <br/>
+              intenzivní = ~900 kcal/h
+            </>
+          }
         />
     </div>
     )
