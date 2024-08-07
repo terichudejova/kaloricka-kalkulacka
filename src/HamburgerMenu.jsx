@@ -19,8 +19,7 @@ export default function NavigationBar() {
         <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
           <a href="#firstSection">Jak to funguje?</a>
           <a href="#secondSection">Spočítat kalorie</a>
-          <a href="#thirdSection">Co dál?</a>
-          <a href='#fourthSection'>Chci vědět více</a>
+          <a href="#thirdSection">Chci vědět více</a>
           <a href='#footer'>Kontakt</a>
         </nav>
       </div>
