@@ -147,7 +147,7 @@ import SportsMmaIcon from '@mui/icons-material/SportsMma';
 import Sport from './Sport';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./SportsBox.css";
-import './CarouselStyles.css';
+
 
 export default function SportsBox() {
     return (

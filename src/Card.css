@@ -3,15 +3,12 @@
   #card {
     width: 30rem;
     height: 25rem;
-    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     position: relative;
     color: rgb(240, 240, 240);
-    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
     font-family: var(--main-font);
     font-size: var(--size-m);
-    margin: var(--space-s);
   }
   
   #card img {
@@ -22,13 +19,14 @@
     top: 0;
     left: 0;
     opacity: 1;
-    transition: opacity 0.2s ease-out;
+    transition: 0.2s ease-out;
   }
   
   #card h2 {
     position: absolute;
-    inset: auto auto 20px 30px;
-    margin: 0;
+    bottom: 0;
+    left: 15%;
+    margin: 0 0 4rem 0;
     transition: inset 0.3s 0.3s ease-out;
     font-family: var(--main-font);
     font-weight: normal;
@@ -36,6 +34,7 @@
     color: white !important;
     font-size: var(--size-m);
     letter-spacing: 0.6rem;
+    text-align: center;
   }
   
   #card p {
@@ -44,15 +43,16 @@
     max-width: 80%;
     transition: opacity 0.3s ease-out;
     white-space: pre-wrap;
+    text-align: left;
   }
   
   #card p {
-    inset: auto auto 50px 20px;
+    margin: 6rem 2rem 3rem 2rem;
   }
   
   #card:hover h2 {
-    inset: auto auto 200px 20px;
-    transition: inset 0.3s ease-out;
+    margin: 2rem 0 20rem 0;
+    transition: margin 0.3s ease-out;
   }
   
   #card:hover p {

@@ -6,6 +6,7 @@ import Calculator from './Calculator'
 import Card from "./Card"
 import SportsBox from './SportsBox'
 import ButtonEffect from './ButtonEffect'
+import CardsContainer from './CardsContainer'
 
 
 
@@ -71,17 +72,19 @@ function App() {
       {/* THIRD SECTION */}
       <div className='thirdSection outerBox' id='thirdSection'>
         <div className='innerBox'>
-          <div id='cards-container'>
-            <Card src={"images/meat.jpg"} title={"BÍLKOVINY"} text={"1 g = 4 kcal \nMaso, uzeniny, vejce, tvaroh, cottage, proteinové produkty, sýry..."}/>
-            <Card src={"images/nuts.jpg"} title={"TUKY"} text={"1 g = 9 kcal \nOřechy, avokádo, ryby, máslo, mléčné výrobbky..."}/>
-            <Card src={"images/potatoes.jpg"} title={"SACHARIDY"} text={"1 g = 4 kcal \nVločky, rýže, brambory, těstoviny, pečivo, ovoce, zelenina, luštěniny..."}/>
-          </div>
           <div className='viceInfo'>
             <h2>Chci vědět více</h2>
-            <p>Ve stravě přijímáme mikroživiny a makroživiny. Mikroživiny jsou živiny, které tělo potřebuje v menších množstvích, ale jsou nezbytné pro různé biochemické procesy a celkové zdraví. Mikroživiny zahrnují vitamíny a minerály. Makroživiny jsou naopak živiny, které tělo potřebuje ve velkých množstvích, aby získalo energii a udrželo základní tělesné funkce. Existují tři hlavní typy makroživin: bílkoviny, tuky a sacharidy.</p>
+            <div className='text-and-carousel'>
+              <CardsContainer />
+              <p>Ve stravě přijímáme mikroživiny a makroživiny. Mikroživiny jsou živiny, které tělo potřebuje v menších množstvích, ale jsou nezbytné pro různé biochemické procesy a celkové zdraví. Mikroživiny zahrnují vitamíny a minerály. Makroživiny jsou naopak živiny, které tělo potřebuje ve velkých množstvích, aby získalo energii a udrželo základní tělesné funkce. Existují tři hlavní typy makroživin: bílkoviny, tuky a sacharidy.</p>
+            </div>
+            <div className='text-and-carousel'>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam hic quibusdam aperiam perferendis debitis ad molestiae exercitationem necessitatibus deleniti, a saepe iure accusamus rem dolor explicabo maiores vero deserunt!</p>
+              <SportsBox />
+            </div>
           </div>
         </div>
-        <SportsBox />
+        
       </div>
 
       {/* FOOTER */}

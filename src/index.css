@@ -430,18 +430,32 @@ h1:hover {
     flex-direction: column;
     justify-content: start;
     align-items: flex-end;
-    min-width: 40%;
-    max-width: 55%;
+    width: 100%;
     padding-bottom: var(--space-s);
     padding-right: var(--space-s);
 }
 
 .viceInfo p {
     margin-bottom: var(--space-s);
-    margin-left: var(--space-xxl);
     text-align: justify;
     line-height: 1.5;
     letter-spacing: 0.05rem;
+}
+
+.viceInfo p:nth-child(2) {
+    margin-left: var(--space-xxl);
+}
+ 
+.viceInfo p:nth-child(1) {
+    margin-right: var(--space-xxl);
+}
+
+.text-and-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
 }
 
 #cards-container {
