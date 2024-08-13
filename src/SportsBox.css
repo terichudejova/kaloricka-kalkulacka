@@ -4,5 +4,27 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
+    height: auto;
+}
+
+.sport-item {
+    height: auto;
+}
+
+.sport-container .carousel-control-prev-icon,
+.sport-container .carousel-control-next-icon,
+.sport-container .carousel-indicators {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(102%) contrast(103%);
+}
+
+.sport-container .carousel-indicators {
+    position: absolute;
+    bottom: 10rem;
+}
+
+.sport-container .carousel-control-prev-icon,
+.sport-container .carousel-control-next-icon {
+    position: absolute;
+    top: 40%;
 }

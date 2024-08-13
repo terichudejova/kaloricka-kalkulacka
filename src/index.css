@@ -51,7 +51,7 @@ h1:hover {
 
 .navbar-container {
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     background-color: var(--main-color);
     padding-bottom: var(--space-m);
     padding-top: var(--space-xs);
@@ -398,7 +398,7 @@ h1:hover {
 /* THIRD SECTION */
 .thirdSection {
     background-color: var(--second-color);
-    height: 150vh;
+    height: auto;
 }
 
 .thirdSection .innerBox {
@@ -472,10 +472,9 @@ h1:hover {
 
 /* FOOTER */
 .footer {
-    background-color: var(--second-color);
-    height: 10vh;
+    background-color: var(--main-color);
+    height: 40rem;
 }
-
 
 
 
@@ -517,6 +516,13 @@ h1:hover {
 
     .uvod {
         max-width: 100%;
+        margin-right: var(--space-xxl);
+        margin-left: var(--space-xxl);
+        padding-left: 0;
+    }
+
+    .uvod p {
+        margin-right: 0;
     }
 
     #foodPlate {
@@ -531,7 +537,6 @@ h1:hover {
         font-size: var(--size-s);
     }
     
-    /* ADDED SECTION */
     /* Span */
     .uvod span {
         color: black;
@@ -559,6 +564,7 @@ h1:hover {
         display:none;
     }
 
+    /* ADDED SECTION */
     .addedSection {
         height: auto;
     }
@@ -577,6 +583,8 @@ h1:hover {
 
     .rovnice {
         max-width: 100%;
+        padding-right: 0;
+        margin-right: var(--space-xxl);
     }
 
     /* SECOND SECTION */
@@ -594,6 +602,12 @@ h1:hover {
 
     .jakPocitat {
         max-width: 100%;
+        margin-left: var(--space-xxl);
+        margin-right: var(--space-xxl);
+    }
+
+    .jakPocitat p {
+        margin-right: 0;
     }
 
     .kalkulacka {
@@ -611,6 +625,11 @@ h1:hover {
 
     .thirdSection .innerBox p {
         font-size: var(--size-s);
+    }
+
+    .viceInfo {
+        margin-left: var(--space-xxl);
+        margin-right: var(--space-xxl);
     }
 
     #pokeBowl {

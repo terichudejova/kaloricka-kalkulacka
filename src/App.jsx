@@ -79,7 +79,7 @@ function App() {
               <p>Ve stravě přijímáme mikroživiny a makroživiny. Mikroživiny jsou živiny, které tělo potřebuje v menších množstvích, ale jsou nezbytné pro různé biochemické procesy a celkové zdraví. Mikroživiny zahrnují vitamíny a minerály. Makroživiny jsou naopak živiny, které tělo potřebuje ve velkých množstvích, aby získalo energii a udrželo základní tělesné funkce. Existují tři hlavní typy makroživin: bílkoviny, tuky a sacharidy.</p>
             </div>
             <div className='text-and-carousel'>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam hic quibusdam aperiam perferendis debitis ad molestiae exercitationem necessitatibus deleniti, a saepe iure accusamus rem dolor explicabo maiores vero deserunt!</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam hic quibusdam aperiam perferendis debitis ad molestiae exercitationem necessitatibus deleniti, a saepe iure accusamus rem dolor explicabo maiores vero deserunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ratione at dolor ea delectus? Nihil nulla earum vitae quod architecto qui, numquam doloribus veritatis ex ut iure dolores aspernatur exercitationem!</p>
               <SportsBox />
             </div>
           </div>

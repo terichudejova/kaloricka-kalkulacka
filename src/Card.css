@@ -64,4 +64,8 @@
     transition: opacity 0.3s ease-in;
     opacity: 0.9;
   }
+
+  #card:hover .lupa {
+    display: none;
+  }
   

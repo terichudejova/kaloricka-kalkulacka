@@ -168,7 +168,7 @@ export default function SportsBox() {
                   }
                 />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className='sport-item'>
                 <Sport
                   IconComponent={DirectionsWalkIcon}
                   title="Chůze"
@@ -184,23 +184,23 @@ export default function SportsBox() {
                   }
                 />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className='sport-item'>
                 <Sport
                   IconComponent={DirectionsBikeIcon}
                   title="Cyklistika"
                   description={
                     <>
-                      400–800 kcal/h
+                      250–650 kcal/h
                       <br/>
                       <br/>
-                      pomalejší = ~400 kcal/h,
+                      pomalejší = ~250 kcal/h,
                       <br/>
-                      intenzivnější = ~800 kcal/h
+                      intenzivnější = ~650 kcal/h
                     </>
                   }
                 />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className='sport-item'>
                 <Sport
                   IconComponent={FitnessCenterIcon}
                   title="Posilování"
@@ -216,7 +216,7 @@ export default function SportsBox() {
                   }
                 />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className='sport-item'>
                 <Sport
                   IconComponent={PoolIcon}
                   title="Plavání"
@@ -232,7 +232,7 @@ export default function SportsBox() {
                   }
                 />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className='sport-item'>
                 <Sport
                   IconComponent={RollerSkatingIcon}
                   title="Bruslení"
@@ -248,7 +248,7 @@ export default function SportsBox() {
                   }
                 />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className='sport-item'>
                 <Sport
                   IconComponent={SportsTennisIcon}
                   title="Tenis"
@@ -264,7 +264,7 @@ export default function SportsBox() {
                   }
                 />
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className='sport-item'>
                 <Sport
                   IconComponent={SportsMmaIcon}
                   title="Box"

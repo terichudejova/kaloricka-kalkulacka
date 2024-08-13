@@ -3,7 +3,8 @@
     position: relative;
     cursor: pointer;
     margin: var(--space-m);
-    
+    background-color: var(--second-color) !important;
+    border: none !important;
 }
 
 .card .face{
@@ -19,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 3;
     transform: translateY(50px);
 }
 
@@ -36,10 +37,6 @@
 
 .card:hover .face.face1 .content{
     opacity: 1;
-}
-
-.card .face.face1 .content img{
-    max-width: 100px;
 }
 
 .card .face.face1 .content h3{
@@ -61,8 +58,8 @@
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
     transform: translateY(-100px);
+    z-index: 2;
 }
 
 .card:hover .face.face2{

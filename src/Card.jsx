@@ -10,7 +10,8 @@ export default function Card({src, title, text}) {
                 <h2>
                     {title}
                     <SearchIcon
-                        sx={{fontSize: "2.5rem"}}
+                        sx={{fontSize: "2.5rem", display: "inline-block"}}
+                        className="lupa"
                     />
                 </h2>
                 <p>
