@@ -79,7 +79,7 @@ function App() {
               <p>Ve stravě přijímáme mikroživiny a makroživiny. Mikroživiny jsou živiny, které tělo potřebuje v menších množstvích, ale jsou nezbytné pro různé biochemické procesy a celkové zdraví. Mikroživiny zahrnují vitamíny a minerály. Makroživiny jsou naopak živiny, které tělo potřebuje ve velkých množstvích, aby získalo energii a udrželo základní tělesné funkce. Existují tři hlavní typy makroživin: bílkoviny, tuky a sacharidy.</p>
             </div>
             <div className='text-and-carousel'>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam hic quibusdam aperiam perferendis debitis ad molestiae exercitationem necessitatibus deleniti, a saepe iure accusamus rem dolor explicabo maiores vero deserunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ratione at dolor ea delectus? Nihil nulla earum vitae quod architecto qui, numquam doloribus veritatis ex ut iure dolores aspernatur exercitationem!</p>
+              <p>Jak už bylo naznačeno, sportem se dá spálit značné množství kalorií. Ono množství závisí na mnoha faktorech a je velmi individuální. Roli hraje fyzická kondice sportovce, typ, délka a intenzita aktivity, ale také individuální aspekty jedince. Obecně však můžeme říct, v jakých rozmezích se spálené kalorie za hodinu určité sportovní aktivity pohybují a jaké aktivity spalují v průměru více kalorií než jiné.</p>
               <SportsBox />
             </div>
           </div>
@@ -88,10 +88,11 @@ function App() {
       </div>
 
       {/* FOOTER */}
-      <footer className='footer outerBox' id='footer'>
+      <div className='footer outerBox' id='footer'>
         <div className='innerBox'>
+            <p>© Tereza Chudějová, 2024</p>
         </div>
-      </footer>
+      </div>
 
     </div>
   )

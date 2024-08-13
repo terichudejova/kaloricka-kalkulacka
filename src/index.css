@@ -473,10 +473,19 @@ h1:hover {
 /* FOOTER */
 .footer {
     background-color: var(--main-color);
-    height: 40rem;
+    height: auto;
 }
 
+.footer .innerBox {
+    padding-top: 0;
+}
 
+.footer p {
+    padding: 0;
+    margin: 2rem 2rem;
+    font-size: var(--size-xs);
+    color: black;
+}
 
 
 

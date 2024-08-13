@@ -19,7 +19,7 @@ export default function CardsContainer() {
                 <Card
                     src={"images/nuts.jpg"}
                     title={"TUKY"}
-                    text={"1 g = 9 kcal \nOřechy, avokádo, ryby, máslo, mléčné výrobbky..."}
+                    text={"1 g = 9 kcal \nOřechy, avokádo, ryby, máslo, mléčné výrobky..."}
                 />
             </Carousel.Item>
             <Carousel.Item className='card-item'>
