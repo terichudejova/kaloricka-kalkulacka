@@ -20,7 +20,6 @@ export default function NavigationBar() {
           <a href="#firstSection">Jak to funguje?</a>
           <a href="#secondSection">Spočítat kalorie</a>
           <a href="#thirdSection">Chci vědět více</a>
-          <a href='#footer'>Kontakt</a>
         </nav>
       </div>
     );

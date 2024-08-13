@@ -25,7 +25,6 @@ function App() {
               <a href='#addedSection'>Jak to funguje?</a>
               <a href='#secondSection'>Spočítat kalorie</a>
               <a href='#thirdSection'>Chci vědět více</a>
-              <a href='#footer'>Kontakt</a>
             </div>
           </div>
         </div>
