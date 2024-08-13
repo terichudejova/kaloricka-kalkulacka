@@ -54,7 +54,7 @@ h1:hover {
     z-index: 4;
     background-color: var(--main-color);
     padding-bottom: var(--space-m);
-    padding-top: var(--space-xs);
+    padding-top: var(--space-s);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -488,7 +488,12 @@ h1:hover {
 }
 
 
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
 
+
+/* RESPONSIVITY */
 
 @media only screen and (max-width: 1480px) {
 
@@ -611,6 +616,7 @@ h1:hover {
 
     .jakPocitat {
         max-width: 100%;
+        padding-right: 0;
         margin-left: var(--space-xxl);
         margin-right: var(--space-xxl);
     }
@@ -620,7 +626,7 @@ h1:hover {
     }
 
     .kalkulacka {
-        max-width: 70%;
+        width: 70%;
     }
 
     /* THIRD SECTION */
@@ -647,3 +653,91 @@ h1:hover {
 }
 
     
+
+@media only screen and (max-width: 1100px) {
+/* FIRST SECTION */
+    .uvod {
+        margin-left: var(--space-m);
+        margin-right: var(--space-m);
+    }
+
+/* ADDED SECTION */
+    .rovnice {
+        margin-right: var(--space-m);
+    }
+
+    .rovnice p {
+        margin-left: var(--space-m);
+    }
+
+/* SECOND SECTION */
+    .jakPocitat {
+        margin-left: var(--space-m);
+        margin-right: var(--space-m);
+    }
+
+    .kalkulacka {
+        width: 100%;
+    }
+
+
+/* THIRD SECTION */
+    .viceInfo {
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+        padding-right: 0;
+        margin-left: var(--space-m);
+        margin-right: var(--space-m);
+    }
+
+    .viceInfo p {
+        order: -1;
+    }
+
+    .viceInfo .text-and-carousel {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .viceInfo .text-and-carousel p {
+        margin: 0;
+    }
+
+    .viceInfo .partOne p {
+        margin-bottom: var(--space-xl);
+    }
+
+    .viceInfo .partTwo p {
+        margin-top: var(--space-xl);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* MARGINS */
+    .uvod {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .rovnice {
+        margin-right: 0;
+    }
+
+    .rovnice p {
+        margin-left: 0;
+    }
+
+    .jakPocitat {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .viceInfo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
