@@ -35,14 +35,14 @@
 h1 {
     font-family: var(--heading-font);
     font-size: var(--size-l);
-    font-weight: 300;
-    color: black;
+    font-weight: 300 !important;
+    color: black !important;
     text-decoration: none;
 }
 
 h1:hover {
     cursor: pointer;
-    color: var(--hover-color);
+    color: var(--hover-color) !important;
 }
 
 .navbar a {
