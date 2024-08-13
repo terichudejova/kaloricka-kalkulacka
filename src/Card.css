@@ -1,8 +1,8 @@
 /* Card.css */
   
   #card {
-    width: 24rem;
-    height: 36rem;
+    width: 30rem;
+    height: 25rem;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -10,6 +10,7 @@
     color: rgb(240, 240, 240);
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
     font-family: var(--main-font);
+    font-size: var(--size-m);
     margin: var(--space-s);
   }
   
@@ -26,7 +27,7 @@
   
   #card h2 {
     position: absolute;
-    inset: auto auto 30px 30px;
+    inset: auto auto 20px 30px;
     margin: 0;
     transition: inset 0.3s 0.3s ease-out;
     font-family: var(--main-font);
@@ -46,11 +47,11 @@
   }
   
   #card p {
-    inset: auto auto 80px 30px;
+    inset: auto auto 50px 20px;
   }
   
   #card:hover h2 {
-    inset: auto auto 220px 30px;
+    inset: auto auto 200px 20px;
     transition: inset 0.3s ease-out;
   }
   

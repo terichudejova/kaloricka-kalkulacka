@@ -26,8 +26,6 @@ export default function SportsBox() {
               500–900 kcal/h
               <br/>
               <br/>
-              Závisí na rychlosti, např.:
-              <br/>
               8 km/h = ~500 kcal/h,
               <br/>
               12 km/h = ~800–900 kcal/h
@@ -41,8 +39,6 @@ export default function SportsBox() {
             <>
               250–350 kcal/h
               <br/>
-              <br/>
-              Závisí na rychlosti, např.:
               <br/>
               4,5 km/h = ~250 kcal/h,
               <br/>
@@ -58,8 +54,6 @@ export default function SportsBox() {
               400–800 kcal/h
               <br/>
               <br/>
-              Závisí na intenzitě, např.:
-              <br/>
               pomalejší = ~400 kcal/h,
               <br/>
               intenzivnější = ~800 kcal/h
@@ -73,8 +67,6 @@ export default function SportsBox() {
             <>
               300–600 kcal/h
               <br/>
-              <br/>
-              Závisí na intenzitě, např.:
               <br/>
               mírnější = ~300 kcal/h,
               <br/>
@@ -90,8 +82,6 @@ export default function SportsBox() {
               400–700 kcal/h
               <br/>
               <br/>
-              Závisí na rychlosti, např.:
-              <br/>
               pomalejší = ~400 kcal/h,
               <br/>
               intenzivnější = ~600 kcal/h
@@ -105,8 +95,6 @@ export default function SportsBox() {
             <>
               300-600 kcal/h
               <br/>
-              <br/>
-              Závisí na intenzitě, např.:
               <br/>
               rekreační = ~300 kcal/h,
               <br/>
@@ -122,8 +110,6 @@ export default function SportsBox() {
               500-800 kcal/h
               <br/>
               <br/>
-              Závisí na intenzitě, např.:
-              <br/>
               rekreační = ~500 kcal/h,
               <br/>
               intenzivnější = ~800 kcal/h
@@ -137,8 +123,6 @@ export default function SportsBox() {
             <>
               600-900 kcal/h
               <br/>
-              <br/>
-              Závisí na intenzitě, např.:
               <br/>
               mírné = ~600 kcal/h,
               <br/>

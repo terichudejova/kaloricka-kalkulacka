@@ -14,12 +14,14 @@
     --space-s: 3rem;
     --space-m: 4rem;
     --space-l: 5rem;
-    --space-xl: 6em;
+    --space-xl: 6rem;
     --space-xxl: 7rem;
+    --space-xxxl: 9rem;
 
     /* Font sizes: */
     --size-xs: 1.3rem;
     --size-s: 1.5rem;
+    --size-s2: 1.8rem;
     --size-m: 2rem;
     --size-l: 2.5rem;
     --size-xl: 3rem;

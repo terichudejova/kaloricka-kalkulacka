@@ -3,12 +3,14 @@
     position: relative;
     cursor: pointer;
     margin: var(--space-m);
+    
 }
 
 .card .face{
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     transition: 0.5s;
+    border-radius: 10px;
 }
 
 .card .face.face1{
@@ -18,7 +20,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(100px);
+    transform: translateY(50px);
 }
 
 .card:hover .face.face1{
@@ -27,7 +29,7 @@
 }
 
 .card .face.face1 .content{
-    opacity: 0.2;
+    opacity: 0.6;
     transition: 0.5s;
     text-align: center;
 }
@@ -45,7 +47,7 @@
     padding: 0;
     color: #fff;
     text-align: center;
-    font-size: var(--size-l);
+    font-size: var(--size-m);
     font-family: var(--main-font);
     font-weight: 300;
     letter-spacing: 0.6rem;
@@ -59,7 +61,7 @@
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
     transform: translateY(-100px);
 }
 
@@ -71,9 +73,10 @@
     margin: 0;
     padding: 0;
     font-family: var(--main-font);
+    font-size: var(--size-s);
 }
 
 .sport-icon {
-    font-size: 10rem !important;
+    font-size: 7rem !important;
     color: white !important;
 }

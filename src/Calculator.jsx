@@ -123,7 +123,7 @@ function Calculator() {
             </Button>
           </div>
           <div className="result">
-            {result !== null && <p>Bazální metabolismus: {Math.round(result)}</p>}
+            {result !== null && <p>BMR: {Math.round(result)} kcal</p>}
           </div>
         </div>
     </div>

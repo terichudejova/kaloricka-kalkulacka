@@ -7,14 +7,17 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    overflow: hidden;
 }
 
 .innerBox {
     position: relative;
     height: 100%;
-    width: 70%;
+    max-width: 60%;
+    padding-top: var(--space-xl);
     /* border: 1px solid red; */
 }
+
 
 /* .pokus {
     width: 100px;
@@ -23,32 +26,69 @@
     margin: 15px;
 } */
 
-p {
-    font-size: 20px;
-}
+
 
 /* ------------------------------------------------------------------------------ */
 
 /* NAVBAR */
-.navbar {
-    background-color: var(--main-color);
-    height: 8vh;
-}
-
-.navbar .innerBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
 h1 {
-    margin: 0;
-    padding-top: var(--space-xs);
     font-family: var(--heading-font);
     font-size: var(--size-l);
     font-weight: 300;
     color: black;
+    text-decoration: none;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: var(--hover-color);
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.navbar-container {
+    position: fixed;
+    z-index: 2;
+    background-color: var(--main-color);
+    padding-bottom: var(--space-m);
+    padding-top: var(--space-xs);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    font-family: var(--main-font);
+    font-size: var(--size-s2);
+    text-decoration: none;
+    color: var(--third-color);
+    margin-left: var(--space-m);
+}
+
+.links a:hover {
+    cursor: pointer;
+    color: var(--hover-color);
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -57,15 +97,15 @@ h1 {
 /* FIRST SECTION */
 .firstSection {
     background-color: var(--main-color);
-    min-height: 70rem;
-    max-height: 250rem;
+    height: auto;
 }
 
 .firstSection .innerBox {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
+    margin-top: var(--space-m);
 }
 
 .firstSection .innerBox h2 {
@@ -74,11 +114,12 @@ h1 {
     color: var(--third-color);
     font-weight: 300;
     width: 70%;
+    margin-bottom: var(--space-m);
 }
 
 #foodPlate {
-    min-width: 30rem;
-    max-width: 45rem;
+    min-width: 30%;
+    max-width: 35%;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.4) 1rem 1rem 3rem;
     margin-right: var(--space-s);
@@ -92,8 +133,8 @@ h1 {
 }
 
 .uvod {
-    min-width: 60%;
-    max-width: 100%;
+    min-width: 40%;
+    max-width: 55%;
     padding-bottom: var(--space-s);
     padding-left: var(--space-s);
 }
@@ -105,6 +146,7 @@ h1 {
     line-height: 1.5;
     letter-spacing: 0.05rem;
 }
+
 
 
 /* Poznámky v textu */
@@ -120,21 +162,21 @@ h1 {
 
 /* Kalorie */
 .uvod span:nth-of-type(1)::after {
-    content: "Kalorie je jednotka energie. \A 1 kilokalorie (kcal) = 4,184 kilojoule (kJ)";
+    content: "Kalorie je jednotka energie. \Akilokalorie (kcal) = 4,184 \Akilojoule (kJ)";
     white-space: pre;
-    width: 40rem;
-    height: 8rem;
-    box-sizing: border-box;
+    width: 30rem;
+    height: 12rem;
     background-color: var(--third-color);
     border-radius: 2rem;
     position: absolute;
-    top: -2rem;
-    left: 10rem;
+    top: 0;
+    left: 5rem;
     color: white;
     padding: 1rem;
     z-index: 1;
     text-align: left;
     display: none;
+    box-sizing: border-box;
 }
 
 .uvod span:nth-of-type(1):hover::after {
@@ -145,13 +187,13 @@ h1 {
 .uvod span:nth-of-type(2)::after {
     content: "Kalorický příjem < kalorický výdej.";
     width: 30rem;
-    height: 8rem;
+    height: auto;
     box-sizing: border-box;
     background-color: var(--third-color);
     border-radius: 2rem;
     position: absolute;
-    top: -2rem;
-    left: 10rem;
+    top: 0;
+    right: 5rem;
     color: white;
     padding: 1rem;
     z-index: 1;
@@ -167,13 +209,13 @@ h1 {
 .uvod span:nth-of-type(3)::after {
     content: "Kalorický příjem > kalorický výdej.";
     width: 30rem;
-    height: 8rem;
+    height: auto;
     box-sizing: border-box;
     background-color: var(--third-color);
     border-radius: 2rem;
     position: absolute;
-    top: -2rem;
-    left: 10rem;
+    top: 0;
+    left: 5rem;
     color: white;
     padding: 1rem;
     z-index: 1;
@@ -188,14 +230,14 @@ h1 {
 /* Bazální metabolismus */
 .uvod span:nth-of-type(4)::after {
     content: "Bazální metabolismus (BMR) je množství energie (kalorií), které tělo potřebuje k udržení základních životních funkcí v klidovém stavu.";
-    width: 38rem;
-    height: 14rem;
+    width: 30rem;
+    height: auto;
     box-sizing: border-box;
     background-color: var(--third-color);
     border-radius: 2rem;
     position: absolute;
-    top: -2rem;
-    left: 10rem;
+    top: 0;
+    left: 5rem;
     color: white;
     padding: 1rem;
     z-index: 1;
@@ -210,12 +252,73 @@ h1 {
 /* ------------------------------------------------------------------------------ */
 
 
+/* ADDED SECTION */
+.addedSection {
+    background-color: var(--second-color);
+    height: auto;
+} 
+
+.addedSection .innerBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: var(--space-m);
+}
+
+.rovnice {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+    min-width: 40%;
+    max-width: 55%;
+    padding-bottom: var(--space-s);
+    padding-right: var(--space-s);
+}
+
+.rovnice p {
+    margin-bottom: var(--space-s);
+    margin-left: var(--space-xxl);
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+}
+
+.addedSection .innerBox p {
+    font-family: var(--main-font);
+    font-size: var(--size-m);
+}
+
+.addedSection .innerBox h2 {
+    font-size: var(--size-xxl);
+    font-family: var(--main-font);
+    color: var(--third-color);
+    font-weight: 300;
+    width: 70%;
+    text-align: right;
+    margin-bottom: var(--space-m);
+}
+
+#salad {
+    min-width: 30rem;
+    max-width: 45rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 1rem 1rem 3rem;
+    margin-right: var(--space-s);
+    margin-top: var(--space-s);
+}
+
+
+
+
+/* ------------------------------------------------------------------------------ */
+
 
 /* SECOND SECTION */
 .secondSection {
-    background-color: var(--second-color);
-    min-height: 70rem;
-    max-height: 250rem;
+    background-color: var(--main-color);
+    height: auto;
 } 
 
 .secondSection .innerBox {
@@ -239,16 +342,16 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: flex-end;
-    max-width: 90rem;
-    min-width: 60%;
+    align-items: flex-start;
+    min-width: 40%;
+    max-width: 60%;
     padding-bottom: var(--space-s);
     padding-right: var(--space-s);
 }
 
 .jakPocitat p {
     margin-bottom: var(--space-s);
-    margin-left: var(--space-xxl);
+    margin-right: var(--space-xxl);
     text-align: justify;
     line-height: 1.5;
     letter-spacing: 0.05rem;
@@ -265,17 +368,17 @@ h1 {
     color: var(--third-color);
     font-weight: 300;
     width: 70%;
-    text-align: right;
+    text-align: left;
+    margin-bottom: var(--space-m);
 }
 
 .kalkulacka {
-    min-width: 70%;
-    max-width: 100%;
-    height: 35rem;
+    width: 100%;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
 }
 
 .kalkulacka h3 {
@@ -294,9 +397,8 @@ h1 {
 
 /* THIRD SECTION */
 .thirdSection {
-    background-color: var(--main-color);
-    min-height: 70rem;
-    max-height: 250rem;
+    background-color: var(--second-color);
+    height: 150vh;
 }
 
 .thirdSection .innerBox {
@@ -304,6 +406,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
+    margin-top: var(--space-m);
 }
 
 .thirdSection .innerBox h2 {
@@ -312,6 +415,8 @@ h1 {
     color: var(--third-color);
     font-weight: 300;
     width: 70%;
+    text-align: right;
+    margin-bottom: var(--space-m);
 }
 
 
@@ -321,27 +426,22 @@ h1 {
 }
 
 .viceInfo {
-    min-width: 60%;
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+    min-width: 40%;
+    max-width: 55%;
     padding-bottom: var(--space-s);
-    padding-left: var(--space-s);
+    padding-right: var(--space-s);
 }
 
 .viceInfo p {
     margin-bottom: var(--space-s);
-    margin-right: var(--space-xxl);
+    margin-left: var(--space-xxl);
     text-align: justify;
     line-height: 1.5;
     letter-spacing: 0.05rem;
-}
-
-#salad {
-    min-width: 30rem;
-    max-width: 45rem;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.4) 1rem 1rem 3rem;
-    margin-right: var(--space-s);
-    margin-top: var(--space-s);
 }
 
 #cards-container {
@@ -349,6 +449,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -367,15 +468,140 @@ h1 {
 
 
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1480px) {
+
+    /* OBECNÉ */
+    .innerBox {
+        max-width: 80%;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        max-width: 80%;
+    }
+
+    .links {
+        display: none;
+    }
+
+    h1 {
+        font-size: var(--size-m);
+    }
+
+    /* FIRST SECTION */
+    .firstSection {
+        height: auto;
+    }
+
     .firstSection .innerBox {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
+        margin-top: var(--space-xl);
+    }
+
+    .uvod {
+        max-width: 100%;
     }
 
     #foodPlate {
-        margin-bottom: var(--space-xl);
+        display: none;
+    }
+    
+    .firstSection .innerBox h2 {
+        font-size: var(--size-xl);
+    }
+
+    .firstSection .innerBox p {
+        font-size: var(--size-s);
+    }
+    
+    /* ADDED SECTION */
+    /* Span */
+    .uvod span {
+        color: black;
+        font-weight: 500;
+    }
+    
+    .uvod span:hover {
+        cursor: default;
+        color: black;
+    }
+
+    .uvod span:nth-of-type(1):hover::after {
+        display:none;
+    }
+
+    .uvod span:nth-of-type(2):hover::after {
+        display:none;
+    }
+
+    .uvod span:nth-of-type(3):hover::after {
+        display:none;
+    }
+
+    .uvod span:nth-of-type(4):hover::after {
+        display:none;
+    }
+
+    .addedSection {
+        height: auto;
+    }
+
+    #salad {
+        display: none;
+    }
+
+    .addedSection .innerBox h2 {
+        font-size: var(--size-xl);
+    }
+
+    .addedSection .innerBox p {
+        font-size: var(--size-s);
+    }
+
+    .rovnice {
+        max-width: 100%;
+    }
+
+    /* SECOND SECTION */
+    .secondSection {
+        height: auto;
+    }
+
+    .secondSection .innerBox h2 {
+        font-size: var(--size-xl);
+    }
+
+    .secondSection .innerBox p {
+        font-size: var(--size-s);
+    }
+
+    .jakPocitat {
+        max-width: 100%;
+    }
+
+    .kalkulacka {
+        max-width: 70%;
+    }
+
+    /* THIRD SECTION */
+    .thirdSection {
+        height: auto;
+    }
+
+    .thirdSection .innerBox h2 {
+        font-size: var(--size-xl);
+    }
+
+    .thirdSection .innerBox p {
+        font-size: var(--size-s);
+    }
+
+    #pokeBowl {
+        display: none;
     }
 }
+
+    
