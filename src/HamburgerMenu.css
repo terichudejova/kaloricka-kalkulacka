@@ -93,4 +93,8 @@
   .hamburger-menu {
     right: 0;
   }
+
+  .nav-menu {
+    right: 3rem;
+  }
 }
