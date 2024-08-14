@@ -94,4 +94,8 @@ button {
     margin-top: var(--space-xs);
     margin-bottom: var(--space-s);
   }
+
+  .result {
+    margin-bottom: var(--space-s);
+  }
 }
