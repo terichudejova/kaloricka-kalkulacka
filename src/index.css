@@ -646,6 +646,10 @@ h1:hover {
         width: 70%;
     }
 
+    .calculator-container {
+        width: 100%;
+    }
+
     /* THIRD SECTION */
     .thirdSection {
         height: auto;
@@ -779,3 +783,10 @@ h1:hover {
     }
 }
 
+
+
+@media only screen and (max-width: 500px) {
+    .kalkulacka {
+        height: 40rem;
+    }
+}
