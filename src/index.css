@@ -279,6 +279,10 @@ h1:hover {
     padding-right: var(--space-s);
 }
 
+.rovnice b {
+    font-weight: 500;
+}
+
 .rovnice p {
     margin-bottom: var(--space-s);
     margin-left: var(--space-xxl);
