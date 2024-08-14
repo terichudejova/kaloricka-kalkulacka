@@ -206,7 +206,7 @@ export default function SportsBox() {
                   title="Posilování"
                   description={
                     <>
-                      300–600 kcal/h
+                      300–500 kcal/h
                       <br/>
                       <br/>
                       mírnější = ~300 kcal/h,
@@ -222,7 +222,7 @@ export default function SportsBox() {
                   title="Plavání"
                   description={
                     <>
-                      400–700 kcal/h
+                      400–600 kcal/h
                       <br/>
                       <br/>
                       pomalejší = ~400 kcal/h,
