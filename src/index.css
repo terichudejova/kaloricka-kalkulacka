@@ -38,6 +38,7 @@ h1 {
     font-weight: 300 !important;
     color: black !important;
     text-decoration: none;
+    padding-left: var(--space-s);
 }
 
 h1:hover {
@@ -58,7 +59,7 @@ h1:hover {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     box-sizing: border-box;
 }
@@ -76,6 +77,7 @@ h1:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-right: var(--space-s);
 }
 
 .links a {
@@ -518,7 +520,7 @@ h1:hover {
 
     /* NAVBAR */
     .navbar {
-        max-width: 80%;
+        width: 80%;
     }
 
     .links {
@@ -527,6 +529,7 @@ h1:hover {
 
     h1 {
         font-size: var(--size-m);
+        padding-left: var(--space-xxl);
     }
 
     /* FIRST SECTION */
@@ -669,6 +672,10 @@ h1:hover {
     
 
 @media only screen and (max-width: 1100px) {
+ /* NAVBAR */
+    h1 {
+        padding-left: var(--space-m);
+    }
 /* FIRST SECTION */
     .uvod {
         margin-left: var(--space-m);
@@ -731,6 +738,10 @@ h1:hover {
 
 @media only screen and (max-width: 600px) {
     /* MARGINS */
+    h1 {
+        padding-left: 0;
+    }
+
     .uvod {
         margin-left: 0;
         margin-right: 0;
@@ -752,6 +763,19 @@ h1:hover {
     .viceInfo {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    /* FONT SIZES */
+    h1 {
+        font-size: var(--size-s);
+    }
+
+    h2 {
+        font-size: var(--size-l);
+    }
+
+    p {
+        font-size: var(--size-xs);
     }
 }
 
